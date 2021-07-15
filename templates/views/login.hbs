@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" >
+    <title>Login Page</title>
+    <link rel="stylesheet" type="text/css" href="/css/uicontrolpanel.css" >
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap" rel="stylesheet"> 
+  </head>
+  <body>
+    <div class="container">
+
+      {{>header}}
+
+      <div class="info">User
+        <div class="text-display"></div>
+      </div>
+
+      <div class="login">Login
+        <div class="text-input" >
+          <input type="username" id="username" placeholder="username">
+        </div>
+        <div class="text-input" >
+          <input type="password" id="password" placeholder="password">
+        </div>
+        <button type="submit" class="button" >submit</button>
+      </div>
+
+      {{>dashboard}}
+      
+    </div>
+
+    <script src="js/login.js"></script>
+  </body>
+</html>

@@ -1,0 +1,116 @@
+.container {
+  display: grid;
+  grid-gap: 2px;
+  grid-template-columns: 20% 35% 25% 20%;
+  grid-template-rows: 3rem 4rem 5rem 4rem 4rem;
+  font-family: 'Ubuntu Mono', monospace;
+  font-size: 20px;
+  color: white;
+}
+
+.header {
+  display: flex;
+  background: black;
+  grid-column-start: 1;
+  grid-column-end: 5;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+
+.icon {
+  background-size: 100%;
+  margin-right: 4px;
+}
+
+.info {
+  background: black;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 5;
+}
+
+.login {
+  background: black;
+  grid-column-start: 3;
+  grid-column-end: 5;
+  grid-row-start: 2;
+  grid-row-end: 5;
+}
+
+.dashboard {
+  display: flex;
+  background: black;
+  grid-column-start: 1;
+  grid-column-end: 5;
+  grid-row-start: 5;
+}
+
+.button {
+  margin-top: 30px;
+  margin-left: 10px;
+  background: white;
+  color: black;
+  font: inherit;
+  border: 1.5px solid blue;
+  padding: 0.5rem;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.button:hover,
+.button:active {
+  background: darkslategray;
+  color: white;
+}
+
+.button:focus {
+  outline:none;
+}
+
+.nav-btn {
+  text-decoration: none;
+  border: none;
+}
+
+.text-display {
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  background: white;
+  color: black;
+}
+
+.dash-row {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.dash-row:hover {
+  -webkit-transform: rotate(-3deg);
+  -moz-transform: rotate(-3deg);
+  -o-transform: rotate(-3deg);;
+  transform: rotate(-3deg);
+}
+
+.text-input {
+  margin-left: 10px;
+  margin-top: 20px;
+  padding: 0px;
+}
+
+.info-form {
+  margin-left: 10px;
+  margin-top: 10px;
+  background: black;
+  color: white;
+  font: inherit;
+  padding: 0.5rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.info-button {
+  margin-top: 10px;
+}

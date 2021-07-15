@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" >
+    <title>Home Page</title>
+    <link rel="stylesheet" type="text/css" href="/css/uicontrolpanel.css" >
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap" rel="stylesheet"> 
+  </head>
+  <body>
+    
+    <div class="container">
+      {{>header}}
+
+      <div class="info">Information
+        <form class="info-form" >
+          <input type="text" placeholder="location" >
+          <button class="button info-button">search</button>
+        </form>
+        
+        <div class="text-display">
+          <p id="location-details"></p>
+          <p id="location-forecast"></p>
+        </div>     
+      </div>
+
+      <div class="login">Login
+        <button type="submit" class="button" style="display: block">
+          <!-- note login not login.html because of handlebars -->
+          <a class="nav-btn button" href="login">login</a>
+        </button>
+        <div class="text-display"></div>
+      </div>
+
+      {{>dashboard}}
+    </div>
+    <script src="js/appClient.js" ></script>
+  </body>
+</html>
