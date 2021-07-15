@@ -1,5 +1,3 @@
-console.log("client side activated ...");
-
 const weatherForm = document.querySelector('.info-form');
 const searchItem = document.querySelector('input');
 const locationOutput = document.querySelector('#location-details');
